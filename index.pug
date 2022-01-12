@@ -1,0 +1,8 @@
+extend components/_template.pug
+block content
+    section.cards-section 
+        h4 Choose one of the following options:
+        div.cards-main-container
+            +home-cards("geometry", "You can calculate the perimeter and the area of different geometry shapes.")
+            +home-cards("percentage", "Input the starting price and the discount and find out how much you will pay.")
+            +home-cards("statistics", "Are you wondering what's the average, mean or mode of a data set?")

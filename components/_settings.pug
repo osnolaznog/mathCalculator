@@ -1,0 +1,132 @@
+mixin home-cards(title, description)
+    .home-cards-container
+        .home-cards
+            img(src='./assets/icons/'+title+'.svg', alt=title)
+            .cards-details 
+                h6= title
+                p= description
+                a(href='/'+title+'.html').main-button-large See more
+
+mixin cards-geometry(title, description, label, placeholder, inputId)
+    .cards-container
+        .cards(id= title+'Card')
+            .front 
+                img(src='./assets/icons/'+title+'.svg', alt=title)
+                .cards-details 
+                    h6= title
+                    p= description
+                    form(action="/").cards-form
+                        label(for= label)= label
+                        input(type="number", placeholder= placeholder, id= inputId)
+                        button(type="button", id= title+'Button', onclick= title+'Calculate()').main-button-large Calculate
+            .back
+                img(src='./assets/icons/close-icon.svg', alt="Close icon", id= title+'Close', class="close-icon") 
+                h6= title
+                .results
+                    .result-container
+                        img(src='./assets/icons/'+title+'-perimeter.svg', alt=title)
+                        .result-info 
+                            p.result-info-title Perimeter 
+                            p(id= title+'Result').result-info-data
+                    .result-container  
+                        img(src='./assets/icons/'+title+'-area.svg', alt=title)
+                        .result-info 
+                            p.result-info-title Area 
+                            p(id= title+'Result2').result-info-data
+
+mixin cards-geometry-double(title, image, description, label1, placeholder1, label2, placeholder2, inputId1, inputId2)
+    .cards-container 
+        .cards(id= image+'Card')
+            .front 
+                img(src='./assets/icons/'+image+'.svg', alt=title)
+                .cards-details 
+                    h6= title
+                    p= description
+                    form(action="").cards-form
+                        label(for= inputId1)= label1
+                        input(type="number", placeholder= placeholder1, id= inputId1)
+                        label(for= inputId2)= label2
+                        input(type="number", placeholder= placeholder2, id= inputId2)
+                        button(type="button", id= image+'Button', onclick= image+'Calculate()').main-button-large Calculate
+            .back
+                img(src='./assets/icons/close-icon.svg', alt="Close icon", id= image+'Close', class="close-icon") 
+                h6= title
+                .results
+                    .result-container 
+                        img(src='./assets/icons/'+image+'-height.svg', alt=title)
+                        .result-info 
+                            p.result-info-title Height 
+                            p(id= image+'Result').result-info-data 20cm
+                    .result-container 
+                        img(src='./assets/icons/'+image+'-perimeter.svg', alt=title)
+                        .result-info 
+                            p.result-info-title Perimeter 
+                            p(id= image+'Result2').result-info-data 20cm
+                    .result-container 
+                        img(src='./assets/icons/'+image+'-area.svg', alt=title)
+                        .result-info 
+                            p.result-info-title Area 
+                            p(id= image+'Result3').result-info-data 20cm
+
+
+mixin cards-percentage(title, image, description, label1, placeholder1, label2, placeholder2, inputId1, inputId2)
+    .cards-container.percentage-cards-container
+        .cards(id= image+'Card')
+            .front 
+                img(src='./assets/icons/'+image+'.svg', alt=title)
+                .cards-details 
+                    h6= title
+                    p= description
+                    form(action="/").cards-form
+                        label(for= inputId1)= label1
+                        input(type="number", placeholder= placeholder1, id= inputId1)
+                        label(for= inputId1)= label2
+                        input(type="text", placeholder= placeholder2, id= inputId2)
+                        button(type="button", id= image+'Button', onclick= image+'Calculate()').main-button-large Calculate
+            .back 
+                img(src='./assets/icons/close-icon.svg', alt="Close icon", id= image+'Close', class="close-icon")
+                h6= title
+                .results
+                    .result-container 
+                        img(src='./assets/icons/starting-price.png', alt=title)
+                        .result-info 
+                            p.result-info-title Starting Price 
+                            p(id= image+'Result').result-info-data $150
+                    .result-container
+                        img(src='./assets/icons/percentage-discount.png', alt=title)
+                        .result-info 
+                            p.result-info-title Discount 
+                            p(id= image+'Result2').result-info-data 15%
+                    .result-container
+                        img(src='./assets/icons/final-price.png', alt=title)
+                        .result-info 
+                            p.result-info-title Final Price 
+                            p(id= image+'Result3').result-info-data $127.5
+
+
+mixin cards-statistics(title, description, label, placeholder, image)
+    .cards-container.statistics-cards-container
+        .cards(id= title+'Card')
+            .front 
+                img(src='./assets/icons/'+title+'.svg', alt=title)
+                .cards-details 
+                    h6= title
+                    p= description
+                    form(action="/").cards-form
+                        label(for= title+'Dataset')= label
+                        input(type="text", id= title+'Dataset',placeholder= placeholder)
+                        button(type="button", id= title+'Button',onclick= title+'Calculate()').main-button-large Calculate
+            .back
+                img(src='./assets/icons/close-icon.svg', alt="Close icon", id= title+'Close', class="close-icon")                 
+                h6= title
+                .results
+                    .result-container
+                        img(src='./assets/icons/dataset-result.svg', alt=title)
+                        .result-info 
+                            p.result-info-title Dataset 
+                            p(id= title+'Result').result-info-data 5, 128, 98, 6, 32, 45, 22, 37, 1
+                    .result-container
+                        img(src='./assets/icons/'+title+'-result.svg', alt=title)
+                        .result-info 
+                            p.result-info-title= title 
+                            p(id= title+'Result2').result-info-data 45

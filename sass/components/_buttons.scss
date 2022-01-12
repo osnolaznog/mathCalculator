@@ -1,0 +1,27 @@
+.main-button-large {
+    display:block;
+    width:100%;
+    background:$accent-color;
+    border-radius:8px;
+    color:$neutral-colors-0;
+    font-family:$secondary-font;
+    text-align:center;
+    font-size:$button-size-small;
+    text-transform:uppercase;
+    padding:16px 48px;
+    border: none;
+    letter-spacing: 1px;
+    text-decoration:none;
+
+    margin-top:48px;
+
+    @include media('>tablet'){
+        font-size:$button-size-medium;
+    }
+
+    @include media('>desktop'){
+        font-size:$button-size-large;
+    }
+
+
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Proffesor Owl</title>
+      <link rel="stylesheet" href="../sass/styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&amp;display=swap" rel="stylesheet">
+      <script src="../js/script.js"></script>
+      <script src="../js/statistics.js"></script>
+    </head>
+  </html>
+  <body>
+    <main> 
+      <section class="header-container"><img src="./assets/img/logo.png" alt="A wise a beautiful owl is the logo of this website">
+        <h1>Are you ready to do some math?</h1>
+      </section>
+    </main>
+    <section class="cards-section"> 
+      <h4>Choose one of the following options:</h4>
+      <div class="cards-main-container">
+        <div class="cards-container"> 
+          <div class="cards" id="triangleCard">
+            <div class="front"> <img src="./assets/icons/triangle.svg" alt="isoceles triangle"/>
+              <div class="cards-details"> 
+                <h6>isoceles triangle</h6>
+                <p>What are the sides and base length of the triangle? </p>
+                <form class="cards-form" action="">
+                  <label for="triangleInputSide1">Sides Length (in cm)</label>
+                  <input type="number" placeholder="Eg. 5" id="triangleInputSide1"/>
+                  <label for="triangleInputBase">Base Length</label>
+                  <input type="number" placeholder="Eg. 8" id="triangleInputBase"/>
+                  <button class="main-button-large" type="button" id="triangleButton" onclick="triangleCalculate()">Calculate</button>
+                </form>
+              </div>
+            </div>
+            <div class="back"><img class="close-icon" src="./assets/icons/close-icon.svg" alt="Close icon" id="triangleClose"/>
+              <h6>isoceles triangle</h6>
+              <div class="results">
+                <div class="result-container"> <img src="./assets/icons/triangle-height.svg" alt="isoceles triangle"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Height </p>
+                    <p class="result-info-data" id="triangleResult">20cm</p>
+                  </div>
+                </div>
+                <div class="result-container"> <img src="./assets/icons/triangle-perimeter.svg" alt="isoceles triangle"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Perimeter </p>
+                    <p class="result-info-data" id="triangleResult2">20cm</p>
+                  </div>
+                </div>
+                <div class="result-container"> <img src="./assets/icons/triangle-area.svg" alt="isoceles triangle"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Area </p>
+                    <p class="result-info-data" id="triangleResult3">20cm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-container">
+          <div class="cards" id="squareCard">
+            <div class="front"> <img src="./assets/icons/square.svg" alt="square"/>
+              <div class="cards-details"> 
+                <h6>square</h6>
+                <p>What's the side length of the square?</p>
+                <form class="cards-form" action="/">
+                  <label for="Side Length (in cm)">Side Length (in cm)</label>
+                  <input type="number" placeholder="Eg. 5" id="squareInput"/>
+                  <button class="main-button-large" type="button" id="squareButton" onclick="squareCalculate()">Calculate</button>
+                </form>
+              </div>
+            </div>
+            <div class="back"><img class="close-icon" src="./assets/icons/close-icon.svg" alt="Close icon" id="squareClose"/>
+              <h6>square</h6>
+              <div class="results">
+                <div class="result-container"><img src="./assets/icons/square-perimeter.svg" alt="square"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Perimeter </p>
+                    <p class="result-info-data" id="squareResult"></p>
+                  </div>
+                </div>
+                <div class="result-container"> <img src="./assets/icons/square-area.svg" alt="square"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Area </p>
+                    <p class="result-info-data" id="squareResult2"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-container">
+          <div class="cards" id="circleCard">
+            <div class="front"> <img src="./assets/icons/circle.svg" alt="circle"/>
+              <div class="cards-details"> 
+                <h6>circle</h6>
+                <p>What's the radius of the circle? </p>
+                <form class="cards-form" action="/">
+                  <label for="Radius (in cm)">Radius (in cm)</label>
+                  <input type="number" placeholder="Eg. 12" id="circleRadio"/>
+                  <button class="main-button-large" type="button" id="circleButton" onclick="circleCalculate()">Calculate</button>
+                </form>
+              </div>
+            </div>
+            <div class="back"><img class="close-icon" src="./assets/icons/close-icon.svg" alt="Close icon" id="circleClose"/>
+              <h6>circle</h6>
+              <div class="results">
+                <div class="result-container"><img src="./assets/icons/circle-perimeter.svg" alt="circle"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Perimeter </p>
+                    <p class="result-info-data" id="circleResult"></p>
+                  </div>
+                </div>
+                <div class="result-container"> <img src="./assets/icons/circle-area.svg" alt="circle"/>
+                  <div class="result-info"> 
+                    <p class="result-info-title">Area </p>
+                    <p class="result-info-data" id="circleResult2"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Made with ♥ by <a href="https://gonzalonso.com" target="_blank">Gonza Alonso</a></p>
+    </footer>
+  </body>
+</html>

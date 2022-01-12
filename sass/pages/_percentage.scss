@@ -1,0 +1,23 @@
+.percentage-container {
+    
+    .percentage-cards-container{
+        display:flex;
+        justify-content:center;
+
+        .cards .back .results .result-container{
+            
+            img{
+                height:80px;
+                
+                @include media('>=tablet', 'screen'){
+                    height:100px;
+                }
+        
+                @include media('>=desktop', 'screen'){
+                    height:120px;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,9 @@
+extend components/_template.pug
+block content
+    section.cards-section 
+        h4 Choose one of the following options:
+        div.cards-main-container
+            +cards-geometry-double("isoceles triangle", "triangle", "What are the sides and base length of the triangle? ", "Sides Length (in cm)", "Eg. 5", "Base Length", "Eg. 8", "triangleInputSide1", "triangleInputBase")
+            +cards-geometry("square", "What's the side length of the square?", "Side Length (in cm)", "Eg. 5", "squareInput")
+            +cards-geometry("circle", "What's the radius of the circle? ", "Radius (in cm)", "Eg. 12", "circleRadio")
+

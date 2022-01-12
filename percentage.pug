@@ -1,0 +1,6 @@
+extend components/_template.pug
+block content
+    section.cards-section 
+        h4 Choose one of the following options:
+        div.cards-main-container.percentage-container
+            +cards-percentage("discounts", "discount", "Input the starting price and the discount you want to calculate.", "Starting Price", "Eg. 150", "Coupon", "Eg. FESTIVE15, WHITEBEARD, RUDOLFSDEAL", "inputPrice", "inputCoupon")

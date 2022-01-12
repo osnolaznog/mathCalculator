@@ -1,0 +1,14 @@
+.statistics-cards-container{
+    #averageCard, #medianCard, #modeCard{
+        height:530px;
+                
+        @include media('>=tablet', 'screen'){
+            height:550px;
+        }
+
+        @include media('>=desktop', 'screen'){
+            height:570px;
+        }
+    }
+
+}

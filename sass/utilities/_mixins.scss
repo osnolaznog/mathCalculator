@@ -1,0 +1,81 @@
+@mixin hero-title ($device-size) {
+    color:$primary-color-25;
+    font-family: $main-font;
+    font-weight:500;
+    text-align:center;
+    text-transform:uppercase;
+    margin:24px auto 48px;
+
+    @if $device-size == large {
+        font-size: $h1-size-large;
+    } @else if $device-size == medium {
+        font-size: $h1-size-medium;
+    } @else {
+        font-size: $h1-size-small;
+    }
+};
+
+@mixin section-cards-title ($device-size) {
+    font-family:$secondary-font;
+    letter-spacing:$subtitle-spacing;
+    font-weight:500;
+    color:$neutral-colors-80;
+    text-align:center;
+    padding: 0 20%;
+
+    
+    @if $device-size == large {
+        font-size: $h4-size-large;
+    } @else if $device-size == medium {
+        font-size: $h4-size-medium;
+    } @else {
+        font-size:$h4-size-small;
+    }
+}
+
+@mixin cards-title ($device-size){
+    font-family:$secondary-font;
+    letter-spacing:$subtitle-spacing;
+    text-align:center;
+    margin-top: 48px;
+    text-transform:capitalize;
+
+    @if $device-size == large {
+        font-size: $h6-size-large;
+    } @else if $device-size == medium {
+        font-size: $h6-size-medium;
+    } @else {
+        font-size:$h6-size-small;
+    }
+}
+
+@mixin forms-label ($device-size){
+    font-family:$secondary-font;
+    font-weight:500;
+    margin-top:24px;
+    letter-spacing:$subtitle-spacing;
+
+    @if $device-size == large {
+        font-size: $label-size-large;
+    } @else if $device-size == medium {
+        font-size: $label-size-medium;
+    } @else {
+        font-size:$label-size-small;
+    }
+}
+
+@mixin cards-description ($device-size){
+    font-family:$secondary-font;
+    font-weight:400;
+    letter-spacing:$p-spacing-small;
+    text-align:left;
+    margin-top:8px;
+
+    @if $device-size == large {
+        font-size: $p-size-large;
+    } @else if $device-size == medium {
+        font-size: $p-size-medium;
+    } @else {
+        font-size:$p-size-small;
+    }
+}

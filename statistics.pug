@@ -1,0 +1,8 @@
+extend components/_template.pug
+block content
+    section.cards-section 
+        h4 Choose the kind of statistic you would like to calculate and follow the instructions below:
+        div.cards-main-container
+            +cards-statistics("average", "Input the data set below to find the aritmethic median.", "Data Set", "Eg. 5, 128, 98, 6, 32, 45, 22, 37, 1")
+            +cards-statistics("median", "Input the data set below to find the mean.", "Data Set", "Eg. 5, 128, 98, 6, 32, 45, 22, 37, 1")
+            +cards-statistics("mode", "Input the data set below to find the mode.", "Data Set", "Eg. 5, 128, 98, 6, 32, 45, 22, 37, 1")

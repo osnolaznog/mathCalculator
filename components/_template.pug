@@ -1,0 +1,11 @@
+include ./_settings.pug
+doctype html
+html(lang="en")
+    include ./_head.pug 
+    body
+        main 
+            section.header-container
+                img(src="./assets/img/logo.png", alt="A wise a beautiful owl is the logo of this website")
+                h1 Are you ready to do some math?
+        block content
+        include ./_footer.pug

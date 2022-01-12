@@ -1,0 +1,26 @@
+<svg width="90" height="91" viewBox="0 0 90 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_73030_3183" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="90" height="91">
+<rect x="1" y="1.59009" width="88" height="88" rx="1" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_73030_3183)">
+<line x1="-45.2652" y1="59.7785" x2="161.564" y2="-147.05" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-40.7652" y1="64.2785" x2="166.064" y2="-142.55" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-36.2652" y1="68.7785" x2="170.564" y2="-138.05" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-31.7652" y1="73.2785" x2="175.064" y2="-133.55" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-27.2652" y1="77.7785" x2="179.564" y2="-129.05" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-22.7652" y1="82.2785" x2="184.064" y2="-124.55" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-18.2652" y1="86.7785" x2="188.564" y2="-120.05" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-13.7652" y1="91.2785" x2="193.064" y2="-115.55" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-9.26517" y1="95.7785" x2="197.564" y2="-111.05" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-4.76517" y1="100.279" x2="202.064" y2="-106.55" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="-0.265165" y1="104.779" x2="206.564" y2="-102.05" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="4.23483" y1="109.279" x2="211.064" y2="-97.5502" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="8.73483" y1="113.779" x2="215.564" y2="-93.0502" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="13.2348" y1="118.279" x2="220.064" y2="-88.5502" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="17.7348" y1="122.779" x2="224.564" y2="-84.0502" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="22.2348" y1="127.279" x2="229.064" y2="-79.5502" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="26.7348" y1="131.779" x2="233.564" y2="-75.0502" stroke="#E5E7FA" stroke-width="0.75"/>
+<line x1="31.2348" y1="136.279" x2="238.064" y2="-70.5502" stroke="#E5E7FA" stroke-width="0.75"/>
+</g>
+<rect x="1" y="1.59009" width="88" height="88" rx="1" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</svg>
